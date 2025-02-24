@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  >
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#home" class="logo">Miriam
+            <span>Malatji</span>
+        </a>
+
+        <i class="fas fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#educations" >Education</a>
+            <a href="#skills">Skills</a>
+            
+            <a href="#attributes">UFS Graduate Attributes</a>
+            <div class="dropdown">
+                <button class="dropbtn">Other
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#projects">Projects</a>
+                  <a href="#certificates">Certificates</a>
+                </div>
+              </div> 
+            <a href="#contact" >Contact</a>       
+        </nav>
+
+        <button id="theme-switch" > 
+            <i class="bx bxs-sun"></i>
+            <i class='fas fa-moon'></i>
+        </button>
+
+    </header>
+  
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, it's <span>Miriam</span></h1>
+
+        <div class="text-animation">
+            I'm aspiring <span id="dynamic-text"></span>
+          </div>
+
+        <p>Highly motivated and detail-oriented IT graduate with a strong foundation in 
+            Computer Science and Physics. Proficient in C# and ASP.NET and experienced 
+            in collaborative projects with Functional problem-solving skill. Eager to
+            contribute to innovative solutions and grow within a dynamic IT environment.
+          </p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/miriam-malatji/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Mary727-Coder" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/sewela.malatji.52831" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            
+        </div>
+
+        <div class="btn-group">
+            <a href="javascript:void(0);" class="btn" onclick="openCV();">
+               Download CV
+            </a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
+    </div> 
+        <div class="home-img">
+           <img  src="images/image4.jpg" alt="">
+        </div>
+
+    </section>
+
+    
+ <section class="educations" id="educations">
+    <h2 class="heading">Education</h2>
+    <div class="timeline">
+        <div class="container left">
+          <div class="year">2024</div>
+          <i class="fas fa-user-graduate"></i>
+          <div class="content">
+            <h2>Bsc in Inforamtion Technology </h2>
+                    <ul>
+                        <li>University of the Free State</li> 
+                        <li>Bloemfontein</li> 
+                        <li>Majoring in <strong>Computer Science and Physics</strong>.</li> 
+                    </ul>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="year">2018</div>
+          <i class="fas fa-school"></i>
+          <div class="content">
+            <h2>Matric(Grade 12)</h2>
+                    <ul>
+                        <li>Mokope Secondary School </li>
+                        <li>Limpopo
+                        <li>NSC (70% Overall Grade Average).</li>
+                        <li>Maths and Science subjects</li>
+                    </ul>
+          </div>
+        </div>
+            
+      </div>
+         
+ </section>
+
+
+<section class="skills" id="skills">
+    <h2 class="heading">Skills</h2>
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li>C#</li>
+                    <li>SQL</li>
+                    <li>Virtualization</li>
+                    <li>Network Configuration</li>
+                    <li>UI/UX Design</li>
+                    <li>Agile Methodologies</li>
+                    <li>Data Analysis</li>
+                    <li>ASP .NET</li>
+                    <li>Computer Literacy</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-info">
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Strategic Thinking</li>
+                    <li>Team Collaboration</li>
+                    <li>Excellent Communication</li>
+                    <li>Community Engagement</li>
+                    <li>Time Management</li>
+                    <li>Attention to Detail</li>
+                    <li>Adaptability and Flexibility</li>
+                    <li>Quick Learning</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="projects-box">
+        <h2 class="heading">Projects</h2>
+
+        <div class="wrapper">
+            <div class="project-item">
+                <h2>Event Management System</h2>
+                <img src="images/project1-1.png" alt="project 1" onclick="openLightbox(this)">
+                <p> <strong>Role:ASP.NET Software Developer</strong></p>
+                <ul>
+                    <li>Developed an Event Management Web Application using ASP.NET 8.0 MVC and C#.</li>
+                    <li>The app allowed users to view events, register, and receive confirmation.</li>
+                    <li>Used Razor views with Bootstrap 5  and MVC controllers for frontend to ensure responsive UI.</li>
+                    <li>Created and managed the database using SQL Server/MySQL with Entity Framework.</li>
+                    <li>Handled errors efficiently using try/catch blocks for better stability.</li>
+                </ul>
+                <a href="https://github.com/Mary727-Coder/Event-Management-System" target="_blank" class="btn">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h2> Student Peer-to-Peer Tutoring System </h2>
+                <img src="images/project2.png" alt="project 2" onclick="openLightbox(this)">
+                <p> Role: <strong>Collaborator</strong></p>
+                <ul>					      
+	                <li>Worked in a team of four to gather and analyze client requirements using the Agile SDLC approach.</li> 
+                    <li>Designed system features for student-tutor collaboration including use cases.</li> 
+                    <li>Created detailed documentation and UI mockups for both mobile and desktop interfaces.</li> 
+                    <li>Used Agile SDM, HTML, Bootstrap, Draw.io,figma and Visual Studio Code.</li> 
+
+                </ul>
+                <a href=" "  target="_blank" class="btn">View Document</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="certificates" id="certificates">
+    <h2 class="heading">Certificates</h2>
+
+    <div class="certificate-grid">
+        <div class="certificate-item">
+            <h2>Building Web APIs with ASP.NET Core 8 Certification</h2>
+            <img src="images/certificate1.png" alt="Certificate 1" onclick="openLightbox(this)">
+        </div>
+
+        <div class="certificate-item">
+            <h2>Data Structures Certification</h2>
+            <img src="images/certificate2.png" alt="Certificate 2" onclick="openLightbox(this)">
+        </div>
+
+        <div class="certificate-item">
+            <h2>Community Outreach Certification</h2>
+            <img src="images/certificate3.jpg" alt="Certificate 3" onclick="openLightbox(this)">
+        </div>
+    </div>
+</section>
+
+<!-- Fullscreen Image View -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+
+<section class="attributes" id="attributes">
+   <div class="attributes-box">
+       <h2 class="heading">UFS Graduate Attributes</h2> 
+       <div class="wrapper">
+            <div class="attribute-item">
+                <h3>Critical Thinking</h3>
+                <p>In creating a Use Case Scenario Diagram, I applied critical thinking by carefully
+                    evaluating client requirements to ensure that all essential user interactions were 
+                    captured. I analyzed how different users would interact with the system and identified
+                    key functionalities needed to create a user-friendly interface. This process required
+                    me to question assumptions, prioritize features, and logically structure user actions
+                    to enhance usability. By organizing the system’s responses to various user inputs, 
+                    I was able to identify potential challenges and make informed decisions to improve 
+                    the overall design. Through this, I demonstrated problem-solving skills and a 
+                    systematic approach to developing an intuitive interface that aligns with user expectations.</p>
+                    <img src="images/artifact1.jpg" alt="artifact 1" onclick="openLightbox(this)">
+                </div>
+            <div class="attribute-item">
+                <h3>Problem-Solving</h3>
+                <p>As a student in Computer Science and Physics, problem-solving is a daily practice. Whether 
+                    debugging code, optimizing algorithms, or tackling physics equations, I continuously apply 
+                    logical reasoning and analytical skills. My coursework, particularly in Data Structures, 
+                    Software Engineering, and Modern Physics, has trained me to approach problems methodically
+                    and find efficient solutions. Additionally, my practical work and projects have reinforced 
+                    my ability to troubleshoot and resolve technical challenges.</p>
+                <img src="images/artifact2.png" alt="artifact 2" onclick="openLightbox(this)">
+            </div>
+            <div class="attribute-item">
+                <h3>Oral Communication </h3>
+                <p>I have demonstrated strong oral communication skills through a Statistical Physics
+                     presentation on thermodynamic ensembles, the Boltzmann distribution, and quantum 
+                     statistics, where I explained complex mathematical concepts and their real-world 
+                     applications. I also participated in a community outreach program, delivering computer
+                     literacy training sessions to the Mangaung community, which helped me develop strong
+                     communication, presentation, and organizational skills while fostering community development..</p>
+                <img src="images/artifact3.jpg" alt="artifact 3" onclick="openLightbox(this)">
+            </div>
+            <div class="attribute-item">
+                <h3>Written Communication </h3>
+                <p>I maintained detailed physics laboratory logbooks, documenting experimental procedures, 
+                    observations, calculations, and results with clarity and precision. Writing experimental reports 
+                    enhanced my ability to present complex scientific data logically, 
+                    adhering to structured formats and scientific conventions. Conducting literature reviews 
+                    strengthened my skills in summarizing, synthesizing, and critically analyzing research while 
+                    maintaining a coherent narrative. Additionally, I ensured high-quality code comments and
+                    documentation to improve readability and maintainability</p>
+                <img src="images/artifact4.png" alt="artifact 4" onclick="openLightbox(this)">
+            </div>
+            <div class="attribute-item">
+                <h3>Community Engagement</h3>
+                <p>I participated in a community outreach program to teach computer literacy.
+                    Through this initiative, I engaged with the Mangaung community.
+                    I conducted training sessions on basic computer skills and applications.
+                    These sessions covered Microsoft Word, Excel, and general digital literacy.
+                    By teaching others, I developed strong communication skills.
+                    I learned how to present complex concepts in a simple, clear manner.
+                    This experience also enhanced my ability to organize structured lessons.
+                    I had to plan sessions to ensure effective knowledge transfer.
+                    Interacting with diverse learners improved my adaptability and patience.
+                    I also gained confidence in public speaking and group facilitation.
+                    Beyond teaching, I contributed to community development efforts.
+                    This experience reinforced the value of knowledge-sharing and empowerment.
+                    It strengthened my teamwork and problem-solving abilities.</p>
+                <img src="images/artifact5.jpg" alt="artifact 5" onclick="openLightbox(this)">
+            </div>
+            <div class="attribute-item">
+                <h3>Digital Skills and Competencies</h3>
+                <p>My ePortfolio itself showcases my technical and digital competencies.
+                    I have structured it to highlight my skills, experiences, and projects.
+                    Through this platform, I present my ability to work with various technologies.
+                    It serves as a digital space where I document my learning journey.
+                    I maintain a GitHub repository to demonstrate my coding experience.
+                    There, I have uploaded a project that reflects my problem-solving abilities.
+                    This project showcases my understanding of software development principles.
+                    I have applied programming concepts to create functional solutions.
+                    By maintaining this repository, I practice version control and collaboration.
+                    It allows me to track changes and improve my code over time.
+                    This demonstrates my commitment to continuous learning and improvement.
+                    </p>
+                <img src="images/artifact6.jpg" alt="artifact 6" onclick="openLightbox(this)">
+            </div>
+       </div>
+   </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <div class="contact-container">
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>
+                <i class="fas fa-envelope"></i>
+                <strong>Email</strong><br> malatjimiriam7@gmail.com
+            </p>
+            <p>
+                <i class="fas fa-phone-alt"></i>
+                <strong>Phone</strong><br> 081 830 7359
+            </p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                <strong>Address</strong><br> Pretoria, Gauteng, South Africa
+            </p>
+        </div>
+        <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form>
+                <input class="input-box" type="text" placeholder="Your Name" required>
+                <input class="input-box" type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+<div class="social">    
+    <a href="https://www.linkedin.com/in/miriam-malatji/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Mary727-Coder" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="#" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/sewela.malatji.52831" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+ </div>
+    <ul class="list">
+        <li> <a href >About Me</a></li>
+        <li> <a href="#contact" >Contact</a></li>
+    </ul>
+    <p class="copyright">
+        &copy;  Miriam Malatji | All rights reserved
+    </p>
+</footer>
+
+<script src="script.js" ></script>
+    
+</body>
+</html>
